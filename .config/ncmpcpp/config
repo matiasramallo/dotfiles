@@ -1,0 +1,39 @@
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "~/Music" 
+#mpd_connection_timeout = "5"
+#mpd_crossfade_time = "5"
+
+audio_output {
+    type                    "fifo"
+    name                    "my_fifo"
+    path                    "~/tmp/mpd.fifo"
+    format                  "44100:16:2"
+}
+
+visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_sync_interval = "10"
+visualizer_type = "wave"
+visualizer_look = ●▮
+#visualizer_look = "+|"
+user_interface = "alternative"
+display_bitrate = "yes"
+
+colors_enabled = "yes"
+alternative_ui_separator_color = "red"
+#window_border_color = "white"
+#active_window_border = "blue"
+header_window_color = "white"
+main_window_color = "cyan"
+statusbar_color = "yellow"
+state_line_color = "magenta"
+state_flags_color = "magenta"
+statusbar_time_color = "yellow"
+player_state_color = "magenta"
+volume_color = "yellow"
+progressbar_color = "red"
+progressbar_elapsed_color = "cyan"
+empty_tag_color = "magenta"
