@@ -28,6 +28,7 @@ pacman -S --noconfirm xorg-server xorg-xinit libev libx11 libxft libxinerama xor
 
 pacman -S --noconfirm ttc-iosevka
 
+cd /tmp
 git clone https://aur.archlinux.org/aura-bin.git
 cd aura-bin
 makepkg
